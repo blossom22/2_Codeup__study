@@ -3,11 +3,11 @@
 # 아래처럼 월 숫자의 규칙성으로 해결할 수 있다. 
 a = int(input("월을 입력하세요: "))
 if a//3 == 1:
-    print("봄")
+    print("spring")
 elif a//3 == 2:
-    print("여름")
+    print("summer")
 elif a//3 == 3:
-    print("가을")
+    print("fall")
 else:
-    print("겨울")
+    print("winter")
 
