@@ -15,3 +15,18 @@ for i in range(0, n):
     for j in range(0, m):
         print(matrix[i][j], end=' ')
     print()
+
+
+# 이처럼 풀수도 있다. 
+n, m = map(int, input().split())
+matrix = [[0] * m for _ in range(n)]
+a = 1
+
+for i in range(n + m - 1):
+    for j in range(max(0, i - n + 1), min(i + 1, m)):
+        k = i - j
+        matrix[k][j] = a
+        a += 1
+
+for row in matrix:
+    print(*row)
