@@ -7,7 +7,7 @@ a = 1
 for i in range(n+m-1):
     start = min(i, n-1)
     end = max(0,i-(m-1))
-    for j in range(start, end-1, -1):
+    for j in range(start, end-1, -1):   # 대각선을 채울때, 아래있는 것 먼저 채워서 for문을 역순으로 함
         k = i - j
         matrix[j][m-1-k] = a
         a += 1
